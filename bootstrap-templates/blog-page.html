@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        .nav-wrapper {
+            background-color: #FFFFFF !important;
+            color: #f2f2f2 !important;
+        }
+
+        .nav-wrapper a {
+            color: black !important;
+        }
+
+        .navbar-brand {
+            font-size: 25px;
+            color: #3E78FF !important;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm mb-3 bg-white rounded"><a class="navbar-brand"
+            href="#"><img src="https://astaqc.com/wp-content/uploads/2020/03/favicon-astaqc-new.png" width="45"
+                height="45" alt="" loading="lazy">Astaqc </a><button class="navbar-toggler" type="button"
+            data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav navbar-nav navbar-right ml-auto">
+                <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Solutions</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Client Success</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <h2>What does Continuous Testing mean and how to perform it?</h2><span>July 21,
+                    2020 12:46:53 AM | by Avanish Pandey </span><img class="img-fluid"
+                    src="https://blog.astaqc.com/hs-fs/hubfs/Continuous%20Testing%20(2).png?width=1920&name=Continuous%20Testing%20(2).png"><br><br>
+                <h3>What is Continuous Testing?</h3>
+                <p>Continuous Testing is a software testing type in which the product is evaluated early,
+                    often,
+                    and throughout the entire Continuous Delivery (CD) process. Continuous testing uses automated
+                    tests to ensure teams receive immediate feedback to quickly mitigate as many risks as possible
+                    throughout the software development lifecycle. Moreover,
+                    team members are able to continuously learn about their product and what can be done to increase
+                    quality and reliability.<br><br>The goal of Continuous Testing is to test early and test often.
+                    The process involves stakeholders like Developer,
+                    DevOps,
+                    QA and Operational system. </p>
+                <h4>Benefits of Continuous Testing</h4>
+                <p>Let's break down a few benefits of continuous testing!
+                    <ul>
+                        <li>Increase release rate: Speed up delivery to production and release faster</li>
+                        <li>Communication transparency: Eliminate silos between the development,
+                            testing,
+                            and operation teams</li>
+                        <li>Accelerate testing: Run parallel performance tests to increase testing execution speed
+                        </li>
+                        <li>Find errors: Ensure as many errors are found before being released to production</li>
+                        <li>Reduce business risks: Assess potential problems before they become an actual problem
+                        </li>
+                        <li>Test early and often: Tested throughout the development,
+                            delivery,
+                            testing,
+                            and deployment cycles</li>
+                    </ul>
+                </p>
+                <h4>The Key Elements of a Successful Continuous Testing Process</h4>
+                <p>To put into place a continuous testing process within your company,
+                    you’ll need at the very least the following four elements.</p>
+                <h5>1. A Continuous Integration Tool</h5>
+                <p>A basic continuous integration tool allows the team to integrate new code that has been deposited
+                    into a central repository to produce a new build of a software solution. Before depositing new
+                    code into the central repository,
+                    team members can work independently to develop a new feature or new functionalities without
+                    affecting the version used by other team members. </p>
+                <h5>2. Environment Provisioning</h5>
+                <p>Having to create a test environment every time a team member wants to test a feature adds
+                    unnecessary steps (update the application, update the database if necessary, restart the
+                    services, etc) that slow the development team down and end up wasting a ton of time over the
+                    course of an entire project. A platform like Docker can make this process much smoother and much
+                    simpler. Creating images requires an initial investment,
+                    but in the long run,
+                    you’ll likely save time. The container-based provisioning step can also be managed through a
+                    continuous integration tool as well. </p>
+                <h5>3. End-To-End Testing</h5>
+                <p>Environment provisioning and a continuous integration tool allow team members to verify new
+                    changes faster and more efficiently. After that,
+                    end-to-end testing,
+                    which integrates test scenarios,
+                    test scripts and test automation tools into a single platform,
+                    ensures software quality by testing the application from beginning to end and generating
+                    detailed test results. Using these results,
+                    it’s very easy for developers to identify the source of an error or what caused software quality
+                    to regress,
+                    allowing developers to fix these issues quickly. Moreover,
+                    test automation doesn’t leave room for human errors,
+                    which means test results are always reliable. Thanks to the power of end-to-end testing,
+                    teams can control the quality of the software solutions they produce much more easily. </p>
+                <h5>4. Teamwork</h5>
+                <p>The last key ingredient of a successful continuous testing process is very simple: teamwork ! A
+                    continuous testing process seeks to integrate testers and quality assurance specialists directly
+                    into the development team,
+                    allowing them to work side-by-side with developers to elaborate test strategies together. In the
+                    end,
+                    the code that the team develops is much more solid,
+                    as the entire team is involved in the quality assurance process. </p>
+                <h4>How to Perform Continuous Testing?</h4>
+                <p>Continuous testing should be implemented at every stage of your CI/CD pipeline. It works best by
+                    using the most recent build in an isolated environment. You can also set up test suites at every
+                    point code changes,
+                    merge or releases. This will help reduce time and effort on testing but still reap quality
+                    rewards. </p>
+                <p>Below are some of the best practices to help you implement continuous testing to best serve your
+                    organization’s needs. </p>
+                <p>
+                    <ol>
+                        <li><b>Adopt more test automation:</b>automation increases the speed and errors coverage at
+                            which testing can function. Automating as much as you can in the development lifecycle
+                            will help you achieve faster releases. </li>
+                        <li><b>Tracking metrics:</b>Use quantifiable metrics to keep track of your success or
+                            failure rate during testing </li>
+                        <li><b>Keep communication transparent:</b>Keep your communication lines transparent to
+                            prevent the testing pipeline from becoming siloed. Active communication is the key to
+                            achieving the balance necessary to effectively carry out continuous testing. </li>
+                        <li><b>Integrate performance testing into delivery cycle:</b>Performance testing is an
+                            integral part of continuous testing as it helps check the speed,
+                            responsiveness,
+                            and stability of your application </li>
+                    </ol>
+                    <h4>Challenges of Continuous Testing</h4>
+                    <ul>
+                        <li>The traditional process is limiting cultural shift among Development & QA professionals.
+                        </li>
+                        <li>Lack of DevOps skills and the right tools for testing in Agile & DevOps environments.
+                        </li>
+                        <li>Heterogenous test environments which will never reflect the production environment.
+                        </li>
+                        <li>Conventional testing process and loosely defined test data management. </li>
+                        <li>Longer code integration cycles create integration issues and late defect fixes </li>
+                        <li>Insufficient and ineffective resources and test environments </li>
+                        <li>Complex application architecture and business logic that restricts DevOps adoption.
+                        </li>
+                    </ul>
+                    <h4>Continuous Testing Tools</h4>
+                    <p>Tools are very useful to help make continuous testing even faster. Below are some of the best
+                        tools for your specific requirements. </p>
+                    <h5>1. Travis CI</h5>
+                    <p>Travis CI is a continuous testing tool hosted on GitHub offering hosted and on-premise
+                        variants. </p>
+                    <h5>2. Jenkins</h5>
+                    <p>Jenkins is a continuous integration tool using Java language and is configurable via both GUI
+                        interface and console commands. </p>
+                    <h5>3. Katalon Studio</h5>
+                    <p>Developed by Katalon LLC,
+                        Katalon Studio offers a comprehensive platform to perform automated testing for Web UI,
+                        Web services,
+                        API services,
+                        and mobile. </p>
+                    <h5>4. Selenium</h5>
+                    <p>Selenium is an open-source software testing tool. It supports most mainstream browsers such
+                        as Chrome,
+                        Firefox,
+                        Safari,
+                        and Internet Explorer. Selenium WebDriver is used to automate web application testing. </p>
+                    <h5>5. QuerySurge</h5>
+                    <p>QuerySurge is the smart data testing solution that is the first-of-its-kind full DevOps
+                        solution for continuous data testing. Key features include Robust API with 60+calls,
+                        detailed data intelligence & data analytics,
+                        seamless integration into the DevOps pipeline for continuous testing,
+                        and verifies large amounts of data quickly. </p>
+                    <h4>Bottom Line</h4>
+                    <p>Successful continuous testing is a competitive advantage,
+                        enabling businesses to deliver value to their customers with higher quality faster. However,
+                        it is not an easy task to make the jump to continuous testing,
+                        and if you’re not aware of the basic tenets of it,
+                        you may find yourself headed for disaster. So make sure you have a strategic planning
+                        process in place before incorporating continuous testing into your organization. </p>
+                    <p><b>Tags:</b>Continuous testing tools,
+                        continuous testing,
+                        Continuous testing in devOps</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class=""><img class="img-fluid" width="100" height="100" alt="" loading="lazy"
+                                    src="https://blog.astaqc.com/hs-fs/hubfs/IMG_2764.jpg?width=100&height=100&name=IMG_2764.jpg">
+                            </div>
+                            <div class="col">
+                                <h3 class="col-12"><b>Written by</b> Avanish Pandey</h3>
+                                <p class="col-12">Avanish Pandey is the 1st and current CEO of Astaqc Consulting. Before
+                                    joining as
+                                    CEO of Astaqc,
+                                    he was a Manager and Sr. Quality Assurance Engineer handling a team of QA's.
+                                    Avanish was Born and raised in Faridabad, a city and district in Haryana, NCR
+                                    region of Delhi and he received a bachelor's degree in Computer Science from the
+                                    MDU.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <form>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput"><b>First Name*</b></label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2"><b>Last Name</b></label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2"><b>Email</b></label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2"><b>Website</b></label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2"><b>Comment</b></label>
+                            <textarea rows="4" type="text" class="form-control" id="formGroupExampleInput2"
+                                placeholder="">
+                            </textarea>
+                        </div>
+                        <button type="submit" class="btn btn-danger mb-2">Submit Feedback</button>
+
+                    </form>
+            </div>
+            <div class="col-md-3">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search for more Articles">
+                    </div>
+                    <h5>Subscribe for Email</h5>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2"><b>Email*</b></label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                    </div>
+                    <button type="submit" class="btn btn-danger mb-2">Subscribe</button>
+                </form>
+                <br>
+                <h4>Posts by Topic</h4>
+                <p>Testing (21)<br>
+                    Azure Devops (8)<br>
+                    QA Ops (7)<br>
+                    Agile Methodology (6)<br>
+                    Manual testing (6)<br><a href="#">See all</a>
+                </p>
+                <h4>Recent Posts</h4>
+                <p>What does Continuous Testing mean and how to perform it?<br>
+                    What is Context Driven Testing<br>
+                    How to run an end to end test in Kubernetes?<br>
+                    What is Cross Origin Resource Sharing and How to use it<br>
+                    How to Dockerize Your Automated Tests Using Docker Containers</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
