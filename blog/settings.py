@@ -113,7 +113,8 @@ TEMPLATES = [
                 'django.template.context_processors.tz',
                 'sekizai.context_processors.sekizai',
                 'django.template.context_processors.static',
-                'cms.context_processors.cms_settings'
+                'cms.context_processors.cms_settings',
+                'seo.context_processors.seo'
             ],
             'loaders': [
                 'django.template.loaders.filesystem.Loader',
@@ -136,7 +137,8 @@ MIDDLEWARE = [
     'cms.middleware.user.CurrentUserMiddleware',
     'cms.middleware.page.CurrentPageMiddleware',
     'cms.middleware.toolbar.ToolbarMiddleware',
-    'cms.middleware.language.LanguageCookieMiddleware'
+    'cms.middleware.language.LanguageCookieMiddleware',
+    'seo.middleware.url_seo_middleware'
 ]
 
 INSTALLED_APPS = [
@@ -179,8 +181,22 @@ INSTALLED_APPS = [
     'djangocms_snippet',
     'djangocms_googlemap',
     'djangocms_video',
-    'blog'
+    'blog',
+    'seo',
+
 ]
+SEO_MODELS = [
+    'seotools.seo',
+    'auth.user'
+]
+SEO_USE_REDIRECTS = True  # for tracking 404 errors
+
+# for tracking models URLs
+"""SEO_TRACKED_MODELS = (
+    'your_app.models.Foo',
+    'your_app.models.Bar'
+)"""
+
 
 LANGUAGES = (
     ## Customize this
