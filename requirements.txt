@@ -3,15 +3,16 @@ beautifulsoup4==4.9.1
 certifi==2020.6.20
 chardet==3.0.4
 Django==3.0.8
+django-check-seo==0.3.4
 django-classy-tags==1.0.0
 django-cms==3.7.4
 django-filer==1.7.1
 django-formtools==2.2
 django-js-asset==1.2.2
+django-meta==1.7.0
 django-mptt==0.11.0
 django-polymorphic==2.1.2
 django-sekizai==1.1.0
-django-seo==0.3.5
 django-treebeard==4.3.1
 djangocms-admin-style==1.5.0
 djangocms-attributes-field==1.2.0
@@ -20,6 +21,7 @@ djangocms-file==2.4.0
 djangocms-googlemap==1.4.0
 djangocms-icon==1.5.0
 djangocms-link==2.6.1
+djangocms-page-meta==0.10.0
 djangocms-picture==2.4.0
 djangocms-snippet==2.3.0
 djangocms-style==2.3.0
@@ -29,6 +31,7 @@ easy-thumbnails==2.7
 html5lib==1.1
 idna==2.10
 Jinja2==2.11.2
+lxml==4.5.2
 MarkupSafe==1.1.1
 Pillow==7.2.0
 pyseoanalyzer==4.0.2

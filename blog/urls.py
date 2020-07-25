@@ -15,11 +15,15 @@ admin.autodiscover()
 urlpatterns = [
     url(r'^sitemap\.xml$', sitemap,
         {'sitemaps': {'cmspages': CMSSitemap}}),
+        
+
 ]
 
 urlpatterns += i18n_patterns(
     url(r'^admin/', admin.site.urls),  # NOQA
+    url(r"^django-check-seo/", include("django_check_seo.urls")),
     url(r'^', include('cms.urls')),
+     
 )
 
 # This is only needed when using runserver.
@@ -28,3 +32,5 @@ if settings.DEBUG:
         url(r'^media/(?P<path>.*)$', serve,
             {'document_root': settings.MEDIA_ROOT, 'show_indexes': True}),
         ] + staticfiles_urlpatterns() + urlpatterns
+
+
