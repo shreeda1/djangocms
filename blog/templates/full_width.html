@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+{% block content %}
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-9">
+			<h2>Title</h2>
+			<span>July 21, 2020 12:46:53 AM | by {{ user }} </span><br>
+			<img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTo9nQV-ocg8GCQE_yQiesX4iroZRXTnI3KrQ&usqp=CAU">
+			<br>
+			<div>
+				{% placeholder "content" or %}
+				There is no content.
+				{% endplaceholder %}
+			</div>
+			<br>
+			<div class="container">
+				<div class="row">
+					<div class="">
+						<img class="img-fluid" width="100" height="100" alt="" loading="lazy"
+							src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTo9nQV-ocg8GCQE_yQiesX4iroZRXTnI3KrQ&usqp=CAU">
+					</div>
+					<div class="col">
+						<h3 class="col-12"><b>Written by</b> {{ user }}</h3>
+						<p class="col-12">Something about the writer</p>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<form action="" type="">
+				<div class="form-group">
+					<label for="first_name"><b>First Name*</b></label>
+					<input type="text" class="form-control" id="first_name" placeholder="">
+				</div>
+				<div class="form-group">
+					<label for="last_name"><b>Last Name</b></label>
+					<input type="text" class="form-control" id="last_name" placeholder="">
+				</div>
+				<div class="form-group">
+					<label for="feedback_email"><b>Email</b></label>
+					<input type="text" class="form-control" id="feedback_email" placeholder="">
+				</div>
+				<div class="form-group">
+					<label for="website_url"><b>Website</b></label>
+					<input type="text" class="form-control" id="website_url" placeholder="">
+				</div>
+				<div class="form-group">
+					<label for="comment"><b>Comment</b></label>
+					<textarea rows="4" type="text" class="form-control" id="comment" placeholder="">
+                            </textarea>
+				</div>
+				<button type="submit" class="btn btn-danger mb-2">Submit Feedback</button>
+			</form>
+		</div>
+		<div class="col-md-3">
+			<form>
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Search for more Articles">
+				</div>
+				<h5>Subscribe for Email</h5>
+				<div class="form-group">
+					<label for="subscription_email"><b>Email*</b></label>
+					<input type="text" class="form-control" id="subscription_email" placeholder="">
+				</div>
+				<button type="submit" class="btn btn-danger mb-2">Subscribe</button>
+			</form>
+			<br>
+			<h4>Posts by Topic</h4>
+			<p>List of Blogs Topic</p>
+			</p>
+			<h4>Recent Posts</h4>
+			<p>Links for Recent Posts</p>
+		</div>
+	</div>
+</div>
+
+{% endblock content %}
