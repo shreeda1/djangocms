@@ -1,41 +1,60 @@
-{% load cms_tags menu_tags sekizai_tags %}
+{% load cms_tags menu_tags sekizai_tags static %}
 <!doctype html>
 <html>
-    <head>
-        <title>{% block title %}This is my new project home page{% endblock title %}</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <style type="text/css">
-            .nav {
-                padding-left: 0;
-            }
-            .nav li {
-                display: inline;
-                list-style-type: none;
-                padding-right: 20px;
-            }
-            .container {
-                width: 940px;
-                margin: 0 auto
-            }
-            .content {
-                float: left;
-                width: 80%;
-            }
-            .sidebar {
-                float: left;
-                width: 20%;
-            }
-        </style>
-        {% render_block "css" %}
-    </head>
-    <body>
-        {% cms_toolbar %}
-        <div class="container">
-            <ul class="nav">
+
+<head>
+    <title>Astaqc - {% block title %}Astaqc{% endblock title %}</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
+    <style type="text/css">
+        .nav {
+            padding-left: 0;
+        }
+
+        .nav li {
+            display: inline;
+            list-style-type: none;
+            padding-right: 20px;
+        }
+
+        .content {
+            float: left;
+            width: 80%;
+        }
+
+        .sidebar {
+            float: left;
+            width: 20%;
+        }
+    </style>
+    
+    {% render_block "css" %}
+</head>
+
+<body>
+    {% cms_toolbar %}
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm mb-3 bg-white rounded">
+        <a class="navbar-brand" href="/">
+            <img src="https://astaqc.com/wp-content/uploads/2020/03/favicon-astaqc-new.png" width="45" height="45" alt="" loading="lazy">
+            Astaqc 
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav navbar-nav navbar-right ml-auto">
                 {% show_menu 0 100 100 100 %}
             </ul>
-            {% block content %}{% endblock content %}
         </div>
-        {% render_block "js" %}
-    </body>
+    </nav>
+    
+    {% block content %}
+    {% endblock content %}
+    
+    {% render_block "js" %}
+</body> 
+
 </html>

@@ -1,0 +1,13 @@
+.nav-wrapper {
+    background-color: #FFFFFF !important;
+    color: #f2f2f2 !important;
+}
+
+.nav-wrapper a {
+    color: black !important;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    color: #3E78FF !important;
+}

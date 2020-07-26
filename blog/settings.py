@@ -227,7 +227,7 @@ CMS_LANGUAGES = {
 
 CMS_TEMPLATES = (
     ## Customize this
-    ('fullwidth.html', 'Fullwidth'),
+    ('full_width.html', 'Blog Page'),
     ('sidebar_left.html', 'Sidebar Left'),
     ('sidebar_right.html', 'Sidebar Right')
 )
