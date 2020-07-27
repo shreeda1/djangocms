@@ -182,6 +182,12 @@ INSTALLED_APPS = [
     'blog',
     'meta',
     'django_check_seo',
+    'aldryn_apphooks_config',
+    'parler',
+    'taggit',
+    'taggit_autosuggest',
+    'sortedm2m',
+    'djangocms_blog',
     
 
 ]
@@ -256,3 +262,29 @@ THUMBNAIL_PROCESSORS = (
     'filer.thumbnail_processors.scale_and_crop_with_subject_location',
     'easy_thumbnails.processors.filters'
 )
+
+META_SITE_PROTOCOL = 'http'
+META_USE_SITES = True
+
+META_USE_OG_PROPERTIES=True
+META_USE_TWITTER_PROPERTIES=True
+META_USE_GOOGLEPLUS_PROPERTIES=True
+
+PARLER_LANGUAGES = {
+    1: (
+        {'code': 'en',},
+    ),
+    'default': {
+        'fallbacks': ['en'],
+    }
+}
+
+
+
+
+SHARIFF = {
+    'services': '["twitter", "facebook", "googleplus", "linkedin", "xing", "mail"]',
+    'mail-url': 'mailto:',                  # optional
+    'prefix':   'Have you seen this: "',    # optional
+    'postfix':  '"',                        # optional
+}
