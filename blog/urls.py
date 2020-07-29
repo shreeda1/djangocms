@@ -15,7 +15,7 @@ admin.autodiscover()
 urlpatterns = [
     url(r'^sitemap\.xml$', sitemap,
         {'sitemaps': {'cmspages': CMSSitemap}}),
-        
+    url(r'^taggit_autosuggest/', include('taggit_autosuggest.urls')),
 
 ]
 
