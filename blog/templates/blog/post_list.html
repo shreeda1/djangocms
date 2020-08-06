@@ -6,7 +6,6 @@
 <div class="container">
     <div class="row">
         <div class="col-md-9">
-            <h2>Blogs List</h2>
             {% block content_blog %}
             <section class="blog-list">
                 {% block blog_title %}
@@ -21,7 +20,7 @@
                 </header>
                 {% endblock %}
                 {% for post in post_list %}
-                {% include "djangocms_blog/includes/blog_item.html" with post=post image="true" TRUNCWORDS_COUNT=TRUNCWORDS_COUNT %}
+                {% include "blog/includes/blog_item.html" with post=post image="true" TRUNCWORDS_COUNT=TRUNCWORDS_COUNT %}
                 {% empty %}
                 <p class="blog-empty">{% trans "No article found." %}</p>
                 {% endfor %}
