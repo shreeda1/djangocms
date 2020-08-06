@@ -2,7 +2,7 @@
 
 <article id="post-{{ post.slug }}" class="post-item">
     {% if image and post.main_image %}
-    <img style="width: 50%; height: 50%;" class="img-thumbnail img-responsive mb-3" src="{{ post.main_image.url }}"/>
+    <img style="width: 50%;" class="img-thumbnail img-responsive mb-3" src="{{ post.main_image.url }}"/>
     {% else %}
         {% media_images post as previews %}
         <div class="blog-visual">
@@ -15,7 +15,7 @@
             <h4>{{ post.subtitle }}</h4>
         {% endif %}
         {% block blog_meta %}
-            {% include "djangocms_blog/includes/blog_meta.html" %}
+            {% include "blog/includes/blog_meta.html" %}
         {% endblock %}
     </header>
     <div class="blog-lead">
