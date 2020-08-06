@@ -288,3 +288,7 @@ SHARIFF = {
     'prefix':   'Have you seen this: "',    # optional
     'postfix':  '"',                        # optional
 }
+CMS_TOOLBAR_HIDE = False
+CMS_TOOLBAR_ANONYMOUS_ON = False
+CMS_TOOLBAR_SIMPLE_STRUCTURE_MODE = False
+DISABLE_TOOLBAR = False
