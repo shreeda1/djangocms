@@ -288,11 +288,11 @@ SHARIFF = {
     'prefix':   'Have you seen this: "',    # optional
     'postfix':  '"',                        # optional
 }
-<<<<<<< HEAD
+
 django_heroku.settings(locals())
-=======
+
 CMS_TOOLBAR_HIDE = False
 CMS_TOOLBAR_ANONYMOUS_ON = False
 CMS_TOOLBAR_SIMPLE_STRUCTURE_MODE = False
 DISABLE_TOOLBAR = False
->>>>>>> 46770b90518007253ae3533a4d73d3f9e6699983
+
