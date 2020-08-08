@@ -259,6 +259,9 @@ SESSION_COOKIE_SAMESITE = 'Strict'
 
 X_FRAME_OPTIONS = 'DENY'
 
+CSP_DEFAULT_SRC = (“‘none’”, )
+
+
 
 CMS_LANGUAGES = {
     ## Customize this
