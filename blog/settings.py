@@ -244,7 +244,7 @@ SESSION_COOKIE_SECURE = True
 
 SECURE_SSL_REDIRECT = True
 
-X_FRAME_OPTIONS = DENY
+X_FRAME_OPTIONS = 'DENY'
 CMS_LANGUAGES = {
     ## Customize this
     1: [
@@ -270,7 +270,7 @@ CMS_TEMPLATES = (
     ('sidebar_right.html', 'Sidebar Right')
 )
 
-X_FRAME_OPTIONS = 'SAMEORIGIN'
+# X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 CMS_PERMISSION = True
 
