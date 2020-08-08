@@ -30,7 +30,10 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['https://astaqc-djangocms.herokuapp.com']
 
-
+SECURE_HSTS_SECONDS = 1
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SECURE_HSTS_PRELOAD = True
+SECURE_REFERRER_POLICY = "no-referrer"
 # Application definition
 
 
@@ -245,6 +248,8 @@ SESSION_COOKIE_SECURE = True
 SECURE_SSL_REDIRECT = True
 
 X_FRAME_OPTIONS = 'DENY'
+
+
 CMS_LANGUAGES = {
     ## Customize this
     1: [
