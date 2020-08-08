@@ -60,3 +60,4 @@ django-heroku
 dj-database-url
 django-cors-headers
 django-csp
+django-feature-policy
