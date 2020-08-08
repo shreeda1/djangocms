@@ -320,3 +320,8 @@ CMS_TOOLBAR_ANONYMOUS_ON = False
 CMS_TOOLBAR_SIMPLE_STRUCTURE_MODE = False
 DISABLE_TOOLBAR = False
 
+# Force HTTP
+DJANGO_CHECK_SEO_FORCE_HTTP = True
+
+# Force HTTPS (default case, same as not defining the variable)
+DJANGO_CHECK_SEO_FORCE_HTTP = False
