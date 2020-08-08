@@ -324,4 +324,4 @@ DISABLE_TOOLBAR = False
 DJANGO_CHECK_SEO_FORCE_HTTP = True
 
 # Force HTTPS (default case, same as not defining the variable)
-DJANGO_CHECK_SEO_FORCE_HTTP = False
+DJANGO_CHECK_SEO_FORCE_HTTPS=True
