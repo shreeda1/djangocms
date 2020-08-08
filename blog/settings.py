@@ -29,7 +29,7 @@ SECRET_KEY = 'f6tveh&+75p6qi(hn3dqpixcx=p0i600c0k@iqat6s4cbei2hx'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://astaqc-djangocms.herokuapp.com']
 
 
 # Application definition
