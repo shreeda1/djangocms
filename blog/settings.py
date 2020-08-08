@@ -143,6 +143,7 @@ MIDDLEWARE = [
     'cms.middleware.language.LanguageCookieMiddleware',
      'corsheaders.middleware.CorsMiddleware',
      'csp.middleware.CSPMiddleware',
+     'django_feature_policy.FeaturePolicyMiddleware',
 ]
 
 INSTALLED_APPS = [
