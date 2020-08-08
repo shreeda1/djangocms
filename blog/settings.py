@@ -209,6 +209,11 @@ SEO_USE_REDIRECTS = True  # for tracking 404 errors
     'your_app.models.Foo',
     'your_app.models.Bar'
 )"""
+
+FEATURE_POLICY = {
+    'geolocation': 'none',
+}
+
 CORS_ORIGIN_ALLOW_ALL = True
 
 CORS_ALLOW_CREDENTIALS = True
