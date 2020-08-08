@@ -20,12 +20,11 @@
                     {% endblock %}
                 </header>
                 {% if not post.main_image_id %}
-                <div class="blog-visual">{% render_placeholder post.media %}</div>
+                <div class="img-responsive img-thumbnail">{% render_placeholder post.media %}</div>
                 {% else %}
-                <div class="blog-visual">
-                    {% thumbnail post.main_image post.full_image_options.size crop=post.full_image_options.crop upscale=post.full_image_options.upscale subject_location=post.main_image.subject_location  as thumb %}
-                    <img src="{{ thumb.url }}" alt="{{ post.main_image.default_alt_text }}" width="{{ thumb.width }}"
-                        height="{{ thumb.height }}" />
+                <div class="img-responsive img-thumbnail">
+                    {% thumbnail post.main_image post.full_image_options.size upscale=post.full_image_options.upscale subject_location=post.main_image.subject_location  as thumb %}
+                    <center><img style="height: 80%; width: 80%;" src="{{ thumb.url }}" alt="{{ post.main_image.default_alt_text }}"/></center>
                 </div>
                 {% endif %}
                 {% endspaceless %}

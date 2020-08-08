@@ -29,6 +29,27 @@
             float: left;
             width: 20%;
         }
+
+        .main-footer {
+            background-color: #000000 !important;
+            bottom: 0;
+        }
+
+        .footer-line {
+            background-color: #FFFFFF;
+        }
+
+        .footer-link h6{
+            color: #F9F8F8;
+        }
+
+        .footer-link a{
+            color: #DCDCDC;
+        }
+
+        .copyright-smt {
+            color: #F9F8F8;
+        }
     </style>
     
     {% render_block "css" %}
@@ -53,6 +74,42 @@
     
     {% block content %}
     {% endblock content %}
+
+    <footer class="text-muted pt-3 pb-3 main-footer">
+      <div class="container">
+        <hr class="footer-line">
+        <div class="row pt-3 pb-3">
+            <div class="col-md-3 pb-3 footer-link">
+                <h6>GET STARTED</h6>
+                <a href="https://astaqc.com/">Home</a><br>
+                <a href="">About</a><br>
+                <a href="">Success Stories</a><br>
+                <a href="">Contact Us</a><br>
+            </div>
+            <div class="col-md-3 pb-3 footer-link">
+                <h6>SERVICES</h6>
+                <a href="">Performance Testing Service</a><br>
+                <a href="">Automation Testing Service</a><br>
+                <a href="">Manual Testing Service</a><br>
+                <a href="">Security Testing Service</a><br>
+            </div>
+            <div class="col-md-3 pb-3 footer-link">
+                <h6>QUICK LINKS</h6>
+                <a href="">FAQ</a><br>
+                <a href="">Blog</a><br>
+                <a href="">Career</a><br>
+                <a href="">Get Started</a><br>
+            </div>
+            <div class="col-md-3 pb-3 footer-link">
+                <h6>LEGAL</h6>
+                <a href="">Cookie Policy</a><br>
+                <a href="">Terms-Conditions</a><br>
+                <a href="">Privacy Policy</a><br>
+            </div>
+        </div>
+        <p class="copyright-smt">© 2018-<script>document.write(new Date().getFullYear())</script> All Rights Reserved | Astaqc Consulting</p>
+      </div>    
+    </footer>
     
     {% render_block "js" %}
 </body> 
