@@ -59,3 +59,4 @@ gunicorn
 django-heroku
 dj-database-url
 django-cors-headers
+django-cps
