@@ -53,12 +53,8 @@ sqlparse==0.3.1
 Unidecode==1.1.1
 urllib3==1.25.10
 webencodings==0.5.1
-<<<<<<< HEAD
-
+psycopg2
 whitenoise
 gunicorn
 django-heroku
 dj-database-url
-=======
-django-cors-headers
->>>>>>> 5d7bbe733a79f90ecb9da9e0f8ef43500b9e716a
