@@ -1,6 +1,6 @@
 {% load djangocms_blog i18n easy_thumbnails_tags cms_tags %}
 
-<article id="post-{{ post.slug }}" class="post-item">
+<article id="post-{{ post.slug }}" class="post-item pb-3">
     {% if image and post.main_image %}
     <img style="width: 50%;" class="img-thumbnail img-responsive mb-3" src="{{ post.main_image.url }}"/>
     {% else %}
