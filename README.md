@@ -33,10 +33,10 @@ designed to integrate thoroughly into other applications`
 
 Developing applications that integrate with and take advantage of django CMS features is easy and well-documented.
 
-## Quick Start
+# Quick Start
 
 
-# running without docker 
+## running without docker 
 ``$ pip install --upgrade virtualenv``
 
 ``$ virtualenv env``
