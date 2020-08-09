@@ -9,23 +9,34 @@ Open source enterprise content management system based on the Django framework.
 
 ## Features
 
+hierarchical pages
 
-    hierarchical pages
-    extensive built-in support for multilingual websites
-    multi-site support
-    draft/publish workflows
-    version control
-    a sophisticated publishing architecture, that's also usable in your own applications
-    frontend content editing
-    a hierarchical content structure for nested plugins
-    an extensible navigation system that your own applications can hook into
-    SEO-friendly URLs
-    designed to integrate thoroughly into other applications`
+extensive built-in support for multilingual websites
+
+multi-site support
+
+draft/publish workflows
+
+version control
+
+a sophisticated publishing architecture, that's also usable in your own applications
+    
+frontend content editing
+    
+a hierarchical content structure for nested plugins
+    
+an extensible navigation system that your own applications can hook into
+    
+SEO-friendly URLs
+    
+designed to integrate thoroughly into other applications`
 
 Developing applications that integrate with and take advantage of django CMS features is easy and well-documented.
 
 ## Quick Start
 
+
+# running without docker 
 ``$ pip install --upgrade virtualenv``
 
 ``$ virtualenv env``
@@ -35,6 +46,10 @@ Developing applications that integrate with and take advantage of django CMS fea
 ``$ pip install - requirements.txt``
 
 ``$ python manage.py runserver``
+
+## running with docker 
+
+``docker-compose up``
 
 ##  Credits 
 
