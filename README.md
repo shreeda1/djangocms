@@ -26,15 +26,15 @@ Developing applications that integrate with and take advantage of django CMS fea
 
 ## Quick Start
 
-`$ pip install --upgrade virtualenv
+``$ pip install --upgrade virtualenv``
 
-$ virtualenv env
+``$ virtualenv env``
 
-$ source env/bin/activate
+``$ source env/bin/activate``
 
-$ pip install - requirements.txt
+``$ pip install - requirements.txt``
 
-$ python manage.py runserver`
+``$ python manage.py runserver``
 
 ##  Credits 
 
