@@ -137,7 +137,7 @@ MIDDLEWARE = [
     'cms.middleware.page.CurrentPageMiddleware',
     'cms.middleware.toolbar.ToolbarMiddleware',
     'cms.middleware.language.LanguageCookieMiddleware',
-     'corsheaders.middleware.CorsMiddleware',
+
 ]
 
 INSTALLED_APPS = [
@@ -189,7 +189,6 @@ INSTALLED_APPS = [
     'taggit_autosuggest',
     'sortedm2m',
     'djangocms_blog',
-    'corsheaders',
     
 ]
 """SEO_MODELS = [
@@ -203,30 +202,6 @@ SEO_USE_REDIRECTS = True  # for tracking 404 errors
     'your_app.models.Foo',
     'your_app.models.Bar'
 )"""
-CORS_ORIGIN_ALLOW_ALL = True
-
-CORS_ALLOW_CREDENTIALS = True
-
-CORS_ALLOW_METHODS = (
-    'DELETE',
-    'GET',
-    'OPTIONS',
-    'PATCH',
-    'POST',
-    'PUT',
-)
-
-CORS_ALLOW_HEADERS = (
-    'accept',
-    'accept-encoding',
-    'authorization',
-    'content-type',
-    'dnt',
-    'origin',
-    'user-agent',
-    'x-csrftoken',
-    'x-requested-with',
-)
 DJANGO_CHECK_SEO_SETTINGS = {
     "internal_links": 25,
     "meta_title_length": [15,30],
