@@ -7,7 +7,7 @@ Open source enterprise content management system based on the Django framework.
 [![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://GitHub.com/astaqc/djangocms/graphs/contributors/)
 
 
-## Features
+# Features
 
 hierarchical pages
 
@@ -51,6 +51,6 @@ Developing applications that integrate with and take advantage of django CMS fea
 
 ``docker-compose up``
 
-##  Credits 
+#  Credits 
 
 @rutvik-panchal
