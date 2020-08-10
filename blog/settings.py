@@ -251,6 +251,8 @@ LANGUAGES = (
 
 CSRF_COOKIE_SECURE = False
 
+CSRF_COOKIE_DOMAIN = 'https://astaqc-djangocms.herokuapp.com'
+
 SESSION_COOKIE_SECURE = True
 
 SECURE_SSL_REDIRECT = True
