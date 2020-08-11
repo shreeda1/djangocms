@@ -249,7 +249,7 @@ LANGUAGES = (
     ('en', gettext('en')),
 )
 
-CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = False
 
 # CSRF_COOKIE_DOMAIN = 'https://astaqc-djangocms.herokuapp.com'
 
@@ -262,7 +262,7 @@ SECURE_CONTENT_TYPE_NOSNIFF = True
 SECURE_HSTS_PRELOAD = True
 
 # CSRF_COOKIE_SECURE = True
-CSRF_USE_SESSIONS = True
+# CSRF_USE_SESSIONS = True
 
 # SESSION_COOKIE_SAMESITE = 'Strict'
 
