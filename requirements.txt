@@ -53,7 +53,7 @@ sqlparse==0.3.1
 Unidecode==1.1.1
 urllib3==1.25.10
 webencodings==0.5.1
-<<<<<<< HEAD
+
 psycopg2
 whitenoise
 gunicorn
@@ -62,5 +62,4 @@ dj-database-url
 django-cors-headers
 django-csp
 django-feature-policy
-=======
->>>>>>> e681caa99e8087f402dd05fe663984f2fde7c479
+
