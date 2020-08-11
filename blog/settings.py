@@ -34,7 +34,7 @@ ALLOWED_HOSTS = ['https://astaqc-djangocms.herokuapp.com']
 SECURE_HSTS_SECONDS = 2592000
 # SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 # SECURE_HSTS_PRELOAD = True
-SECURE_REFERRER_POLICY = "no-referrer"
+# SECURE_REFERRER_POLICY = "no-referrer"
 # Application definition
 
 
