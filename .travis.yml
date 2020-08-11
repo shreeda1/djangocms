@@ -4,8 +4,13 @@ python:
 
 services:
     - docker
+<<<<<<< HEAD
 
 before_script: pip install docker-compose
 
 script:
     - docker-compose up
+=======
+script:
+    - echo "skipping tests"
+>>>>>>> e681caa99e8087f402dd05fe663984f2fde7c479
