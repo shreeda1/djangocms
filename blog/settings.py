@@ -29,8 +29,8 @@ ALLOWED_HOSTS = ['https://astaqc-djangocms.herokuapp.com']
 
 
 SECURE_HSTS_SECONDS = 2592000
-# SECURE_HSTS_INCLUDE_SUBDOMAINS = True
-# SECURE_HSTS_PRELOAD = True
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SECURE_HSTS_PRELOAD = True
 # SECURE_REFERRER_POLICY = "no-referrer"
 # Application definition
 
@@ -252,7 +252,7 @@ LANGUAGES = (
 
 CSRF_COOKIE_SECURE = True
 
-CSRF_COOKIE_DOMAIN = 'https://astaqc-djangocms.herokuapp.com'
+# CSRF_COOKIE_DOMAIN = 'https://astaqc-djangocms.herokuapp.com'
 
 SESSION_COOKIE_SECURE = True
 
