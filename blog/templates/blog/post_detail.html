@@ -24,7 +24,8 @@
                 {% else %}
                 <div class="img-responsive img-thumbnail">
                     {% thumbnail post.main_image post.full_image_options.size upscale=post.full_image_options.upscale subject_location=post.main_image.subject_location  as thumb %}
-                    <center><img style="height: 80%; width: 80%;" src="{{ thumb.url }}" alt="{{ post.main_image.default_alt_text }}"/></center>
+                    <center><img style="height: 80%; width: 80%;" src="{{ thumb.url }}"
+                            alt="{{ post.main_image.default_alt_text }}" /></center>
                 </div>
                 {% endif %}
                 {% endspaceless %}
@@ -48,19 +49,21 @@
         <div class="col-md-3">
             <form>
                 <h5>Subscribe for Email</h5>
-                <div class="form-group">
-                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-    <script>
-      hbspt.forms.create({
-        portalId: "6326957",
-        formId: "dd2705af-3b8b-4370-ab02-19cac38f01c1"
-    });
-    </script>
-               
+                <div>
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                <script>
+                    hbspt.forms.create({
+                        portalId: "6326957",
+                        formId: "dd2705af-3b8b-4370-ab02-19cac38f01c1"
+                    });
+                </script>
+                </div>
+            </form>
             <br>
             <h4>Posts by Topic</h4>
             <p>List of Blogs Topic</p>
-            </p>
+            {% static_placeholder "recent" %}
+            </br>
             <h4>Recent Posts</h4>
             <p>Links for Recent Posts</p>
         </div>
