@@ -189,7 +189,7 @@ INSTALLED_APPS = [
     'taggit_autosuggest',
     'sortedm2m',
     'djangocms_blog',
-    
+    'mediumeditor',
 ]
 """SEO_MODELS = [
     'seotools.seo',
@@ -291,3 +291,31 @@ CMS_TOOLBAR_HIDE = False
 CMS_TOOLBAR_ANONYMOUS_ON = False
 CMS_TOOLBAR_SIMPLE_STRUCTURE_MODE = False
 DISABLE_TOOLBAR = False
+
+MEDIUM_EDITOR_THEME = 'bootstrap'
+MEDIUM_EDITOR_OPTIONS = {
+'toolbar': {
+'static': True,
+'buttons': [
+'bold',
+'italic',
+'underline',
+'strikethrough',
+'subscript',
+'superscript',
+'h1',
+'h2',
+'h3',
+'h4',
+'h5',
+'h6',
+]
+},
+'paste': {
+'forcePlainText': True,
+'cleanPastedHTML': False,
+'cleanReplacements': [],
+'cleanAttrs': ['class', 'style', 'dir'],
+'cleanTags': ['meta']
+}
+}
