@@ -11,3 +11,43 @@
     font-size: 25px;
     color: #3E78FF !important;
 }
+.nav {
+    padding-left: 0;
+}
+
+.nav li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+.content {
+    float: left;
+    width: 80%;
+}
+
+.sidebar {
+    float: left;
+    width: 20%;
+}
+
+.main-footer {
+    background-color: #000000 !important;
+    bottom: 0;
+}
+
+.footer-line {
+    background-color: #FFFFFF;
+}
+
+.footer-link h6{
+    color: #F9F8F8;
+}
+
+.footer-link a{
+    color: #DCDCDC;
+}
+
+.copyright-smt {
+    color: #F9F8F8;
+}
